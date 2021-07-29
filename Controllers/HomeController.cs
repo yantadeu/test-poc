@@ -23,7 +23,7 @@ namespace feature_flags.Controllers
             _logger = logger;
         }
 
-        [Route("appConfiguration")]
+        [Route("appConfigurationPoc")]
         [HttpGet]
         public JsonResult Configuration()
         {
