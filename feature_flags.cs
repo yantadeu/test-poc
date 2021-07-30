@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.AzureAppConfiguration;
 using System.Linq;
 using System.Collections.Generic;
 using test_poc.Models;
@@ -14,6 +15,7 @@ namespace feature_flags
 {
     public static class feature_flags
     {
+
        [FunctionName("feature_flags")]
         public static async Task<JsonResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
