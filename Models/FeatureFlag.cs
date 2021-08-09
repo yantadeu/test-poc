@@ -2,10 +2,10 @@ namespace test_poc.Models
 {
     public class FeatureFlag
     {
-        public string Id { get; set; }
-        public string Marca { get; set; }
-        public string Produto { get; set; }
-        public string Description { get; set; }
-        public string Enabled { get; set; }
+        public string id { get; set; }
+        public string marca { get; set; }
+        public string produto { get; set; }
+        public string description { get; set; }
+        public bool enabled { get; set; }
     }
 }
